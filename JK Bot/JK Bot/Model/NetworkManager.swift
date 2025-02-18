@@ -1,7 +1,7 @@
 import Foundation
 
 class NetworkManager {
-    private let apiKey = "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"
+    private let apiKey = "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"
     private let apiURL = "https://openrouter.ai/api/v1/chat/completions"
     
     func sendMessage(message: String, completion: @escaping (String) -> Void) {
@@ -15,7 +15,7 @@ class NetworkManager {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
         
-        // Creating request body
+        //request body banako
         let requestBody: [String: Any] = [
             "model": "deepseek/deepseek-chat:free",
             "messages": [
@@ -23,10 +23,10 @@ class NetworkManager {
             ]
         ]
 
-        // Convert dictionary to JSON data
+        // dictinoary data lai json ma convert garako
         do {
             let jsonData = try JSONSerialization.data(withJSONObject: requestBody, options: [])
-            request.httpBody = jsonData
+            request.httpBody = jsonData  //requestbody lai json banara pathako
         } catch {
             print("Failed to encode request body: \(error.localizedDescription)")
             return
@@ -57,6 +57,10 @@ class NetworkManager {
                        let firstChoice = choices.first,
                        let messageDict = firstChoice["message"] as? [String: Any],
                        let reply = messageDict["content"] as? String {
+                        if(reply.isEmpty){
+                            completion("Server is busy. Please try again later.")
+                            return
+                        }
                         completion(reply)
                     } else {
                         print("Key 'message.content' not found in response")

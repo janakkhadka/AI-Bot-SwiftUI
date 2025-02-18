@@ -1,8 +1,8 @@
 import Foundation
 
 class NetworkManager {
-    private let apiKey = "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"
-    private let apiURL = "https://openrouter.ai/api/v1/chat/completions"
+    private let apiKey = "api_key"
+    private let apiURL = "api_url"
     
     func sendMessage(message: String, completion: @escaping (String) -> Void) {
         guard let url = URL(string: apiURL) else {

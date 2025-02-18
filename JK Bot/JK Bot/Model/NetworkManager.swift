@@ -9,7 +9,7 @@ import Foundation
 
 class NetworkManager {
     private let apiKey = "sk-c2a8ab90f8f446269dad0d961a8a9973"
-    private let apiURL = "https://api.deepseek.com/v1/chat"
+    private let apiURL = "https://api.deepseek.com"
     
     func sendMessage(message: String, completion: @escaping (String) ->Void){
         guard let url = URL(string: apiURL) else {

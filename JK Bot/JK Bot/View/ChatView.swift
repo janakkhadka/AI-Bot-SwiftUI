@@ -64,6 +64,7 @@ struct ChatView: View {
                 
                 ToolbarItem(placement: .topBarTrailing) {
                     Button(action: {
+                        viewModel.messages = [] //purano chat haru hatauna lai
                     }) {
                         Image(systemName: "plus")
                             .font(.title2)

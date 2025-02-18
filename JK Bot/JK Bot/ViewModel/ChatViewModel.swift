@@ -14,10 +14,12 @@ class ChatViewModel: ObservableObject {
     private let networkManager = NetworkManager()
     
     func sendMessage() {
+        //user message rakheko
         let userMessage = Message(text: userInput, isUser: true)
         messages.append(userMessage)
         userInput = ""
         
+        //ai message rakheko
         networkManager.sendMessage(message: userMessage.text){ reply in
             DispatchQueue.main.async {
                 let botMessage = Message(text: reply, isUser: false)

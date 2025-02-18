@@ -1,7 +1,7 @@
 import Foundation
 
 class NetworkManager {
-    private let apiKey = "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"
+    private let apiKey = "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"
     private let apiURL = "https://openrouter.ai/api/v1/chat/completions"
     
     func sendMessage(message: String, completion: @escaping (String) -> Void) {
@@ -43,7 +43,7 @@ class NetworkManager {
                 return
             }
 
-            // Print raw response data as a string
+            // raw response data print gareko
             if let rawResponse = String(data: data, encoding: .utf8) {
                 print("Raw API Response: \(rawResponse)")
             }

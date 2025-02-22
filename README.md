@@ -1,6 +1,6 @@
 # JK Bot
 
-An interactive **iOS chatbot app** built with **Swift** and **SwiftUI**, offering a seamless chat experience with **no authentication required**. Every interaction is a **one-time chat**, with a **+ icon** to start a new conversation instantly.
+An interactive **iOS chatbot app** built with **Swift** and **SwiftUI**, offering a seamless chat experience with **no authentication required**. Every interaction is a **one-time chat**.
 
 ## Features
 - **No Authentication Required**: Chat without logging in.
@@ -24,9 +24,13 @@ An interactive **iOS chatbot app** built with **Swift** and **SwiftUI**, offerin
 ## Contributing
 Pull requests are welcome. For significant changes, please open an issue to discuss modifications.
 
-## License
-(Include license details if applicable)
-
 ## Contact
 For any inquiries, reach out via janakkhadka08@gmail.com.
 
+## 🌟 Star the Project
+
+If you find this project useful or interesting, please consider giving it a **star** on GitHub! Your support helps motivate further development and improvements.
+
+[![Star this repo](https://img.shields.io/github/stars/janakkhadka/AI-Bot-SwiftUI?style=social)](https://github.com/janakkhadka/AI-Bot-SwiftUI/stargazers)
+
+Click the button above or simply go to the repository and click the **Star** button at the top right. Thank you! 🚀

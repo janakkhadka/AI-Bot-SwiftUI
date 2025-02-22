@@ -28,5 +28,5 @@ Pull requests are welcome. For significant changes, please open an issue to disc
 (Include license details if applicable)
 
 ## Contact
-For any inquiries, reach out via [your email or GitHub profile].
+For any inquiries, reach out via janakkhadka08@gmail.com.
 

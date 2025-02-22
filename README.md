@@ -2,6 +2,8 @@
 
 An interactive **iOS chatbot app** built with **Swift** and **SwiftUI**, offering a seamless chat experience with **no authentication required**. Every interaction is a **one-time chat**.
 
+![App Screenshot](images/main.png)
+
 ## Features
 - **No Authentication Required**: Chat without logging in.
 - **One-Time Chat**: Each conversation session resets after completion.
